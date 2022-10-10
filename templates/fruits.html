@@ -24,7 +24,10 @@
         <section class="jumbotron text-center">
           <div class="container">
             <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
+
+            {% for fruit in fruits_imgs %}
+              <img src="/static/img/{{ fruit }}.png" class="img-thumbnail" alt="fruit" style="height: 100px;">
+            {% endfor %}
 
             <p>
               <a href="/" class="btn btn-primary my-2">Go back</a>
